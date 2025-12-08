@@ -43,7 +43,7 @@ Be respectful, professional, and constructive in all interactions.
 
 4. **Test your changes:**
    ```bash
-   cd PlaywrightPyCharm
+   cd ZaectorCore
    ./gradlew build
    ./gradlew runIde
    ```
@@ -69,7 +69,7 @@ Be respectful, professional, and constructive in all interactions.
 
 ### Build Commands
 ```bash
-cd PlaywrightPyCharm
+cd ZaectorCore
 
 # Build plugin
 ./gradlew build
@@ -86,7 +86,7 @@ cd PlaywrightPyCharm
 
 ### Project Structure
 ```
-PlaywrightPyCharm/
+ZaectorCore/
 ├── src/main/kotlin/          # Kotlin source (IDE layer)
 │   └── com/zaenrotech/playwright/playwrightpycharm/
 ├── src/main/resources/        # Resources

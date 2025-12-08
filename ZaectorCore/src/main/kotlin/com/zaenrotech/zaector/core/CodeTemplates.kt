@@ -1,4 +1,4 @@
-package com.zaenrotech.playwright.playwrightpycharm
+package com.zaenrotech.zaector.core
 
 /**
  * Code generation templates for different testing frameworks

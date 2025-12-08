@@ -1,4 +1,4 @@
-package com.zaenrotech.playwright.playwrightpycharm
+package com.zaenrotech.zaector.core
 
 import com.intellij.icons.AllIcons
 import com.intellij.openapi.actionSystem.*

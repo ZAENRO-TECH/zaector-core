@@ -1,4 +1,4 @@
-package com.zaenrotech.playwright.playwrightpycharm
+package com.zaenrotech.zaector.core
 
 /**
  * Represents a Page Object extracted from recorded actions

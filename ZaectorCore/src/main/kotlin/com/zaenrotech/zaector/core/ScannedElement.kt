@@ -1,4 +1,4 @@
-package com.zaenrotech.playwright.playwrightpycharm
+package com.zaenrotech.zaector.core
 
 data class ScannedElement(
     val tagName: String,

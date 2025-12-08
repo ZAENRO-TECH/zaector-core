@@ -38,26 +38,26 @@
 
         <toolWindow id="ZÆCTOR Inspector"
                     anchor="bottom"
-                    factoryClass="com.zaenrotech.playwright.playwrightpycharm.PlaywrightInspectorFactory"
+                    factoryClass="com.zaenrotech.zaector.core.PlaywrightInspectorFactory"
                     icon="AllIcons.General.Web"/>
 
         <toolWindow id="ZÆCTOR Tests"
                     anchor="left"
-                    factoryClass="com.zaenrotech.playwright.playwrightpycharm.PlaywrightTestExplorerFactory"
+                    factoryClass="com.zaenrotech.zaector.core.PlaywrightTestExplorerFactory"
                     icon="AllIcons.Nodes.TestSourceFolder"/>
 
         <toolWindow id="ZÆCTOR Library"
                     anchor="right"
-                    factoryClass="com.zaenrotech.playwright.playwrightpycharm.PlaywrightLibraryFactory"
+                    factoryClass="com.zaenrotech.zaector.core.PlaywrightLibraryFactory"
                     icon="AllIcons.Nodes.Folder"/>
 
-        <applicationService serviceImplementation="com.zaenrotech.playwright.playwrightpycharm.PlaywrightSettings"/>
+        <applicationService serviceImplementation="com.zaenrotech.zaector.core.PlaywrightSettings"/>
 
         <applicationConfigurable parentId="tools"
-                                 instance="com.zaenrotech.playwright.playwrightpycharm.PlaywrightConfigurable"
+                                 instance="com.zaenrotech.zaector.core.PlaywrightConfigurable"
                                  id="com.zaenrotech.zactor.settings"
                                  displayName="ZÆCTOR"/>
 
-        <postStartupActivity implementation="com.zaenrotech.playwright.playwrightpycharm.PlaywrightStartupActivity"/>
+        <postStartupActivity implementation="com.zaenrotech.zaector.core.PlaywrightStartupActivity"/>
     </extensions>
 </idea-plugin>

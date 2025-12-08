@@ -26,11 +26,11 @@ export JAVA_HOME=/path/to/jdk-21
 ## Build Plugin
 
 ```bash
-cd PlaywrightPyCharm
+cd ZaectorCore
 ./gradlew buildPlugin
 ```
 
-**Output**: `build/distributions/PlaywrightPyCharm-1.0.0.zip`
+**Output**: `build/distributions/ZaectorCore-1.0.0.zip`
 
 ## Verify Plugin
 
@@ -50,7 +50,7 @@ cd PlaywrightPyCharm
 2. Go to: https://github.com/ZAENRO-TECH/zaector-core/releases/new
 3. Create tag: `v1.0.0`
 4. Title: **ZÆCTOR CORE v1.0.0 - Initial Release**
-5. Upload: `build/distributions/PlaywrightPyCharm-1.0.0.zip`
+5. Upload: `build/distributions/ZaectorCore-1.0.0.zip`
 6. Add release notes:
 
 ```markdown
@@ -69,7 +69,7 @@ First open source release of ZÆCTOR CORE - Professional test automation plugin 
 
 ## Installation
 
-1. Download `PlaywrightPyCharm-1.0.0.zip`
+1. Download `ZaectorCore-1.0.0.zip`
 2. In PyCharm: `Settings → Plugins → ⚙️ → Install Plugin from Disk...`
 3. Select the downloaded ZIP file
 4. Restart IDE

@@ -1,4 +1,4 @@
-package com.zaenrotech.playwright.playwrightpycharm
+package com.zaenrotech.zaector.core
 
 import com.intellij.openapi.options.Configurable
 import com.intellij.openapi.components.PersistentStateComponent

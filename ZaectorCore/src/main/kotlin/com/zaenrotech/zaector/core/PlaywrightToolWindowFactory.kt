@@ -1,4 +1,4 @@
-package com.zaenrotech.playwright.playwrightpycharm
+package com.zaenrotech.zaector.core
 
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken

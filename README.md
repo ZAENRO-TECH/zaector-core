@@ -61,7 +61,7 @@ ZÆCTOR CORE is an open-source PyCharm plugin that supercharges your Playwright 
 ### From Source
 ```bash
 git clone https://github.com/zaenro-tech/zactor-core.git
-cd zactor-core/PlaywrightPyCharm
+cd zactor-core/ZaectorCore
 ./gradlew buildPlugin
 ```
 

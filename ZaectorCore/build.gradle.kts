@@ -4,8 +4,8 @@ plugins {
     id("org.jetbrains.intellij.platform") version "2.7.1"
 }
 
-group = "com.zaenrotech.playwright"
-version = "1.0-SNAPSHOT"
+group = "com.zaenrotech.zaector"
+version = "1.0.0"
 
 repositories {
     mavenCentral()
