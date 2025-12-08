@@ -609,7 +609,7 @@ class TestExplorerPanel(private val project: Project) {
             override fun onComplete(executionId: String) {
                 ApplicationManager.getApplication().invokeLater {
                     detailsTextArea.append("\nExecution complete.\n")
-                    currentSuite?.let { updateStats(it) }
+                    allTests?.let { updateStats(it) }
                     resetButtonStates()
                 }
             }
@@ -687,7 +687,7 @@ class TestExplorerPanel(private val project: Project) {
             override fun onComplete(executionId: String) {
                 ApplicationManager.getApplication().invokeLater {
                     detailsTextArea.append("\nExecution complete.\n")
-                    currentSuite?.let { updateStats(it) }
+                    allTests?.let { updateStats(it) }
                     resetButtonStates()
                 }
             }
