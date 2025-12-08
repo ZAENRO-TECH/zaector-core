@@ -175,7 +175,7 @@ class PlaywrightInspectorFactory : ToolWindowFactory, DumbAware {
                     val isConnected = browserHighlighter.isBrowserAvailable()
                     ApplicationManager.getApplication().invokeLater {
                         val notificationGroup = com.intellij.notification.NotificationGroupManager.getInstance()
-                            .getNotificationGroup("Playwright")
+                            .getNotificationGroup("Zactor")
 
                         if (isConnected) {
                             notificationGroup.createNotification(
@@ -352,7 +352,7 @@ class PlaywrightInspectorFactory : ToolWindowFactory, DumbAware {
         private fun startRecording() {
             if (!browserHighlighter.isBrowserAvailable()) {
                 val notificationGroup = com.intellij.notification.NotificationGroupManager.getInstance()
-                    .getNotificationGroup("Playwright")
+                    .getNotificationGroup("Zactor")
                 notificationGroup.createNotification(
                     "Browser Not Connected",
                     "Please scan with 'Keep Open' enabled before recording.",
@@ -406,7 +406,7 @@ class PlaywrightInspectorFactory : ToolWindowFactory, DumbAware {
             val actions = recorderManager.getActions()
             if (actions.isEmpty()) {
                 val notificationGroup = com.intellij.notification.NotificationGroupManager.getInstance()
-                    .getNotificationGroup("Playwright")
+                    .getNotificationGroup("Zactor")
                 notificationGroup.createNotification(
                     "No Actions Recorded",
                     "Please record some actions first.",
@@ -445,7 +445,7 @@ class PlaywrightInspectorFactory : ToolWindowFactory, DumbAware {
 
             // Show notification
             val notificationGroup = com.intellij.notification.NotificationGroupManager.getInstance()
-                .getNotificationGroup("Playwright")
+                .getNotificationGroup("Zactor")
             notificationGroup.createNotification(
                 "Code Generated",
                 "Generated test code from ${actions.size} recorded actions.",
@@ -457,7 +457,7 @@ class PlaywrightInspectorFactory : ToolWindowFactory, DumbAware {
             val actions = recorderManager.getActions()
             if (actions.isEmpty()) {
                 val notificationGroup = com.intellij.notification.NotificationGroupManager.getInstance()
-                    .getNotificationGroup("Playwright")
+                    .getNotificationGroup("Zactor")
                 notificationGroup.createNotification(
                     "No Actions Recorded",
                     "Please record some actions first.",
@@ -490,7 +490,7 @@ class PlaywrightInspectorFactory : ToolWindowFactory, DumbAware {
 
             // Show notification
             val notificationGroup = com.intellij.notification.NotificationGroupManager.getInstance()
-                .getNotificationGroup("Playwright")
+                .getNotificationGroup("Zactor")
             notificationGroup.createNotification(
                 "Page Objects Generated",
                 "Generated Page Object Model with test from ${actions.size} recorded actions.",
@@ -571,7 +571,7 @@ class PlaywrightInspectorFactory : ToolWindowFactory, DumbAware {
 
             if (!browserHighlighter.isBrowserAvailable()) {
                 val notificationGroup = com.intellij.notification.NotificationGroupManager.getInstance()
-                    .getNotificationGroup("Playwright")
+                    .getNotificationGroup("Zactor")
                 notificationGroup.createNotification(
                     "Browser Not Connected",
                     "Please scan with 'Keep Open' enabled to use highlighting.",
@@ -586,7 +586,7 @@ class PlaywrightInspectorFactory : ToolWindowFactory, DumbAware {
 
                 ApplicationManager.getApplication().invokeLater {
                     val notificationGroup = com.intellij.notification.NotificationGroupManager.getInstance()
-                        .getNotificationGroup("Playwright")
+                        .getNotificationGroup("Zactor")
                     notificationGroup.createNotification(
                         "Element Highlighted",
                         "Element '$selector' is highlighted in the browser.",
@@ -609,7 +609,7 @@ class PlaywrightInspectorFactory : ToolWindowFactory, DumbAware {
 
                 // Show notification with instructions
                 val notificationGroup = com.intellij.notification.NotificationGroupManager.getInstance()
-                    .getNotificationGroup("Playwright")
+                    .getNotificationGroup("Zactor")
 
                 notificationGroup.createNotification(
                     "Find Selector in Code",
