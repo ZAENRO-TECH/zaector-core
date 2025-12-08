@@ -2,7 +2,7 @@
     <id>com.zaenrotech.zactor.core</id>
     <name>ZÆCTOR CORE</name>
     <vendor email="support@zaenro.tech" url="https://zaenro.tech">ZÆNRO TECH</vendor>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
 
     <description><![CDATA[
     Professional test automation for PyCharm. Visual DOM inspection, intelligent code generation,
@@ -20,6 +20,12 @@
     ]]></description>
 
     <change-notes><![CDATA[
+    <b>1.0.3</b>
+    <ul>
+        <li>Fix: Test statistics (passed/failed counts) now update correctly after test execution</li>
+        <li>Fix: Stats now show accurate results in "All Tests" overview</li>
+    </ul>
+    <br/>
     <b>1.0.2</b>
     <ul>
         <li>Fix: NullPointerException when highlighting elements in browser</li>
