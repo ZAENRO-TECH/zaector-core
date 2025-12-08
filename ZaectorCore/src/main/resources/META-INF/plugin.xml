@@ -2,7 +2,7 @@
     <id>com.zaenrotech.zactor.core</id>
     <name>ZÆCTOR CORE</name>
     <vendor email="support@zaenro.tech" url="https://zaenro.tech">ZÆNRO TECH</vendor>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 
     <description><![CDATA[
     Professional test automation for PyCharm. Visual DOM inspection, intelligent code generation,
@@ -20,6 +20,13 @@
     ]]></description>
 
     <change-notes><![CDATA[
+    <b>1.0.1</b>
+    <ul>
+        <li>Fix: "Open in Editor" context menu now works properly</li>
+        <li>Fix: Test summary (passed/failed counts) updates after execution</li>
+        <li>Improved: Test Explorer UI responsiveness</li>
+    </ul>
+    <br/>
     <b>1.0.0</b>
     <ul>
         <li>Initial release of ZÆCTOR CORE</li>
