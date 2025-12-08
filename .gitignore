@@ -1,0 +1,58 @@
+# Claude AI files
+.claude/
+*.claude
+
+# Screenshots and images
+*.png
+*.jpg
+*.jpeg
+*.gif
+
+# Build
+build/
+out/
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Gradle
+.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Kotlin
+.kotlin/
+
+# Logs
+*.log
+hs_err_pid*
+replay_pid*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+venv/
+
+# Test artifacts
+test-results/
+playwright-report/
+*.trace.zip
+screenshots/
+videos/

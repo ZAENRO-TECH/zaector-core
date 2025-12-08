@@ -1,0 +1,63 @@
+<idea-plugin>
+    <id>com.zaenrotech.zactor.core</id>
+    <name>ZÆCTOR CORE</name>
+    <vendor email="support@zaenro.tech" url="https://zaenro.tech">ZÆNRO TECH</vendor>
+    <version>1.0.0</version>
+
+    <description><![CDATA[
+    Professional test automation for PyCharm. Visual DOM inspection, intelligent code generation,
+    live recording, Page Object Model generation, and comprehensive test management.
+    <br/><br/>
+    <b>Features:</b>
+    <ul>
+        <li>DOM Inspector with smart selector generation</li>
+        <li>Multi-framework code generation (Python, TypeScript, JavaScript, Robot Framework)</li>
+        <li>Live browser recording with smart waits</li>
+        <li>Professional Page Object Model generator</li>
+        <li>Test Explorer with multi-framework support</li>
+        <li>Test execution and suite management</li>
+    </ul>
+    ]]></description>
+
+    <change-notes><![CDATA[
+    <b>1.0.0</b>
+    <ul>
+        <li>Initial release of ZÆCTOR CORE</li>
+        <li>Complete DOM inspection and selector generation</li>
+        <li>Live recording with smart wait injection</li>
+        <li>Page Object Model generator</li>
+        <li>Test Explorer and execution engine</li>
+        <li>Multi-framework support (Pytest, Playwright Test, unittest, Robot Framework)</li>
+    </ul>
+    ]]></change-notes>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <notificationGroup id="Zactor" displayType="BALLOON"/>
+
+        <toolWindow id="ZÆCTOR Inspector"
+                    anchor="bottom"
+                    factoryClass="com.zaenrotech.playwright.playwrightpycharm.PlaywrightInspectorFactory"
+                    icon="AllIcons.General.Web"/>
+
+        <toolWindow id="ZÆCTOR Tests"
+                    anchor="left"
+                    factoryClass="com.zaenrotech.playwright.playwrightpycharm.PlaywrightTestExplorerFactory"
+                    icon="AllIcons.Nodes.TestSourceFolder"/>
+
+        <toolWindow id="ZÆCTOR Library"
+                    anchor="right"
+                    factoryClass="com.zaenrotech.playwright.playwrightpycharm.PlaywrightLibraryFactory"
+                    icon="AllIcons.Nodes.Folder"/>
+
+        <applicationService serviceImplementation="com.zaenrotech.playwright.playwrightpycharm.PlaywrightSettings"/>
+
+        <applicationConfigurable parentId="tools"
+                                 instance="com.zaenrotech.playwright.playwrightpycharm.PlaywrightConfigurable"
+                                 id="com.zaenrotech.zactor.settings"
+                                 displayName="ZÆCTOR"/>
+
+        <postStartupActivity implementation="com.zaenrotech.playwright.playwrightpycharm.PlaywrightStartupActivity"/>
+    </extensions>
+</idea-plugin>
