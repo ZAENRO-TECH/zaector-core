@@ -609,6 +609,7 @@ class TestExplorerPanel(private val project: Project) {
             override fun onComplete(executionId: String) {
                 ApplicationManager.getApplication().invokeLater {
                     detailsTextArea.append("\nExecution complete.\n")
+                    currentSuite?.let { updateStats(it) }
                     resetButtonStates()
                 }
             }
@@ -686,6 +687,7 @@ class TestExplorerPanel(private val project: Project) {
             override fun onComplete(executionId: String) {
                 ApplicationManager.getApplication().invokeLater {
                     detailsTextArea.append("\nExecution complete.\n")
+                    currentSuite?.let { updateStats(it) }
                     resetButtonStates()
                 }
             }
@@ -739,7 +741,39 @@ class TestExplorerPanel(private val project: Project) {
      * Open selected test in editor
      */
     private fun openSelectedTestInEditor() {
-        println("[TestExplorer] Open in editor not yet implemented")
+        val node = tree.lastSelectedPathComponent as? DefaultMutableTreeNode
+        val userObject = node?.userObject
+
+        val filePath = when (userObject) {
+            is TestCase -> userObject.path
+            is TestFile -> userObject.path
+            is TestFolder -> userObject.path
+            else -> null
+        }
+
+        if (filePath != null) {
+            val file = java.io.File(filePath)
+            if (file.exists()) {
+                val virtualFile = com.intellij.openapi.vfs.LocalFileSystem.getInstance().findFileByIoFile(file)
+                if (virtualFile != null) {
+                    com.intellij.openapi.fileEditor.FileEditorManager.getInstance(project).openFile(virtualFile, true)
+                } else {
+                    JOptionPane.showMessageDialog(
+                        panel,
+                        "Could not find file in project: $filePath",
+                        "Error",
+                        JOptionPane.ERROR_MESSAGE
+                    )
+                }
+            } else {
+                JOptionPane.showMessageDialog(
+                    panel,
+                    "File does not exist: $filePath",
+                    "Error",
+                    JOptionPane.ERROR_MESSAGE
+                )
+            }
+        }
     }
 
     /**
