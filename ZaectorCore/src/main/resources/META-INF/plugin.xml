@@ -2,7 +2,7 @@
     <id>com.zaenrotech.zactor.core</id>
     <name>ZÆCTOR CORE</name>
     <vendor email="support@zaenro.tech" url="https://zaenro.tech">ZÆNRO TECH</vendor>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
 
     <description><![CDATA[
     Professional test automation for PyCharm. Visual DOM inspection, intelligent code generation,
@@ -20,6 +20,12 @@
     ]]></description>
 
     <change-notes><![CDATA[
+    <b>1.0.2</b>
+    <ul>
+        <li>Fix: NullPointerException when highlighting elements in browser</li>
+        <li>Fix: Corrected notification group references throughout Inspector</li>
+    </ul>
+    <br/>
     <b>1.0.1</b>
     <ul>
         <li>Fix: "Open in Editor" context menu now works properly</li>
