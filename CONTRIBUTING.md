@@ -88,7 +88,7 @@ cd ZaectorCore
 ```
 ZaectorCore/
 ├── src/main/kotlin/          # Kotlin source (IDE layer)
-│   └── com/zaenrotech/playwright/playwrightpycharm/
+│   └── com/zaenrotech/zaector/core/
 ├── src/main/resources/        # Resources
 │   ├── python/runner.py       # Browser automation
 │   ├── scanner/dom_scanner.js # DOM analysis

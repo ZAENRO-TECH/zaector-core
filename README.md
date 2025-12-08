@@ -83,8 +83,8 @@ The plugin will be in `build/distributions/`
    ```
 
 2. **Open Tool Windows:**
-   - `View → Tool Windows → Playwright Inspector`
-   - `View → Tool Windows → Playwright Tests`
+   - `View → Tool Windows → ZÆCTOR Inspector`
+   - `View → Tool Windows → ZÆCTOR Tests`
 
 3. **Inspect Elements:**
    - Enter URL in Inspector
@@ -98,7 +98,7 @@ The plugin will be in `build/distributions/`
 
 ## Configuration
 
-Access settings via `Settings → Tools → Playwright`
+Access settings via `Settings → Tools → ZÆCTOR`
 
 **Code Generation:**
 - Framework (Python Sync, Pytest, TypeScript, JavaScript, Robot)
