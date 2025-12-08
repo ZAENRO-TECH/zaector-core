@@ -56,3 +56,6 @@ playwright-report/
 *.trace.zip
 screenshots/
 videos/
+# Internal documentation
+TODO.md
+LICENSE_STRATEGY.md
