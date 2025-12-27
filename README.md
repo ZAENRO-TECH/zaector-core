@@ -138,15 +138,13 @@ Licensed under the Apache License, Version 2.0. See [LICENSE](LICENSE) for detai
 ZÆCTOR CORE follows an **Open Core** model:
 
 - **CORE (Free & Open Source)**: All features in this repository
-- **PRO (€15/month)**: Visual regression, advanced analytics, mobile testing
-- **ENTERPRISE (€75/month)**: Team collaboration, ALM integrations, AI features, priority support
-
-See [LICENSE_STRATEGY.md](LICENSE_STRATEGY.md) for complete details.
+- **PRO TBD**: Visual regression, advanced analytics, mobile testing
+- **ENTERPRISE TBD**: Team collaboration, ALM integrations, AI features, priority support
 
 ## Support
 
 - **Issues**: [GitHub Issues](https://github.com/zaenro-tech/zactor-core/issues)
-- **Documentation**: [Wiki](https://github.com/zaenro-tech/zactor-core/wiki)
+- **Documentation**: [Wiki]([https://github.com/zaenro-tech/zactor-core/wiki](https://github.com/ZAENRO-TECH/zaector-core/wiki))
 - **Community**: [Discussions](https://github.com/zaenro-tech/zactor-core/discussions)
 
 ## Links
