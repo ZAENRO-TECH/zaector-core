@@ -144,7 +144,7 @@ ZÆCTOR CORE follows an **Open Core** model:
 ## Support
 
 - **Issues**: [GitHub Issues](https://github.com/zaenro-tech/zactor-core/issues)
-- **Documentation**: [Wiki]([https://github.com/zaenro-tech/zactor-core/wiki](https://github.com/ZAENRO-TECH/zaector-core/wiki))
+- **Documentation**: [Wiki](https://github.com/ZAENRO-TECH/zaector-core/wiki)
 - **Community**: [Discussions](https://github.com/zaenro-tech/zactor-core/discussions)
 
 ## Links
